@@ -90,17 +90,25 @@ footer:
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.miitbeian.gov.cn
   beian:
-    enable: true
-    icp: 赣ICP备 - 18012283
+    enable: false
+    icp: 
+  # 公安网备案 for Chinese users. local mean 京 or 赣 
   gongan:
-    enable: true
-    local: 赣
-    num: 36010202000154
+    enable: false
+    local: 京
+    num: 1234556667
 
   # -------------------------------------------------------------
   # web run time
+  # Format, 2018-02-13 15:00:00. If there is only one digit, use zero to complete.
   runtime:
-    enable: true
+    enable: false
+    year: 2018
+    mouth: 02
+    day: 13
+    hour: 15
+    minute: 00
+    second: 00
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
@@ -126,11 +134,11 @@ creative_commons:
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: true
+seo: false
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: true
+index_with_subtitle: false
 
 # Automatically add external URL with BASE64 encrypt & decrypt.
 exturl: false
@@ -159,7 +167,7 @@ menu:
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
+  badges: false
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -207,7 +215,7 @@ social:
   #Skype: skype:yourname?call|chat || skype
 
 social_icons:
-  enable: true
+  enable: false
   icons_only: false
   transition: false
 

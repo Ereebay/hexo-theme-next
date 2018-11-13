@@ -1,7 +1,13 @@
 <div>
    <span id="sitetime"></span>
+   <span id="year" style="display:none">{{theme.footer.runtime.year}}</span> 
+   <span id="month" style="display:none">{{theme.footer.runtime.month}}</span>   
+   <span id="day" style="display:none">{{theme.footer.runtime.day}}</span>   
+   <span id="hour" style="display:none">{{theme.footer.runtime.hour}}</span>   
+   <span id="minute" style="display:none">{{theme.footer.runtime.minute}}</span>   
+   <span id="second" style="display:none">{{theme.footer.runtime.second}}</span>   
     <script language=javascript>
-    function siteTime(){
+    function siteTime(){        
         window.setTimeout("siteTime()", 1000);
         var seconds = 1000;
         var minutes = seconds * 60;
@@ -22,8 +28,14 @@
         hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2018,02,13,15,00,00); //北京时间2018-2-13 00:00:00
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */        
+        var year = document.getElementById("year").innerHTML;
+        var month = document.getElementById("month").innerHTML;
+        var day = document.getElementById("day").innerHTML;
+        var hour = document.getElementById("hour").innerHTML;
+        var minute = document.getElementById("minute").innerHTML;
+        var second = document.getElementById("second").innerHTML;//北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(year,month,day,hour,minute,second); 
         var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
         var diff = t2-t1;
         var diffYears = Math.floor(diff/years);
@@ -37,6 +49,7 @@
         document.getElementById("sitetime").innerHTML=" Website has run  "+diffYears+" year "+diffDays+" days "+diffHours+" h "+diffMinutes+" min "+diffSeconds+" s";
         }
     }
+    //siteTime(document.getElementById("year").innerHTML,document.getElementById("year").innerHTML,document.getElementById("year").innerHTML,document.getElementById("year").innerHTML,document.getElementById("year").innerHTML,0);
     siteTime();
     </script>
 </div>
