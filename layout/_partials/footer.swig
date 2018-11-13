@@ -64,17 +64,11 @@
 
 
 {% if theme.footer.beian.enable %}{#
-#}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp ) }}{{' | '}}
-<span style="padding-left:25px;background:url(https://s1.ax1x.com/2018/09/29/ilmwIH.png) no-repeat left center" rel="nofollow">
-{{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='+theme.footer.beian.gongan_num, theme.footer.beian.gongan_local+'公网安备'+theme.footer.beian.gongan_num+'号' ) }}</span>{#
-
-<div class="BbeiAn-info">
-  {{ __('赣ICP备') }} -
-  <a target="_blank" href="http://www.miitbeian.gov.cn/" style="color:#f0d784"  rel="nofollow">18012283-1</a> | 
-  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010202000154" style="color:#f0d784;text-decoration:none;padding-left:30px;background:url(https://s1.ax1x.com/2018/09/29/ilmwIH.png) no-repeat left center" rel="nofollow">
-  {{ __('赣公网安备 36010202000154号') }}
-  </a>
-</div>
+#}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp ) }}
+{% endif %}
+{% if theme.footer.gongan.enable %}{#
+#} {{' | '}}<span style="padding-left:25px;background:url(https://s1.ax1x.com/2018/09/29/ilmwIH.png) no-repeat left center" rel="nofollow">
+{{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='+theme.footer.gongan.num, theme.footer.gongan.local+'公网安备'+theme.footer.gongan.num+'号' ) }}</span>{#
 #}{% endif %}
 
 

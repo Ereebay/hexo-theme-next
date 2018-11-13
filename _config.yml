@@ -92,8 +92,10 @@ footer:
   beian:
     enable: true
     icp: 赣ICP备 - 18012283
-    gongan_local: 赣
-    gongan_num: 36010202000154
+  gongan:
+    enable: true
+    local: 赣
+    num: 36010202000154
 
   # -------------------------------------------------------------
   # web run time
