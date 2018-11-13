@@ -91,6 +91,33 @@ For those who also encounter **«[Error: Cannot find module 'hexo-util'](https:/
 
 Contribution is welcome, feel free to open an issue and fork. Waiting for your pull request.
 
+## The modification I made
+
+in `_config.yml`
+- Enable public security network filing
+    ```javascript
+    # 公安网备案 for Chinese users. local mean 京 or 赣  
+    # like：赣公网安备36010202000154号
+    gongan:
+        enable: true
+        local: 赣
+        num: 36010202000154
+    ```
+
+- Enable website runtime reminders
+
+  ```javascript
+  # Format, 2018-02-13 15:00:00. If there is only one digit, use zero to complete.
+    runtime:
+      enable: true
+      year: 2018
+      mouth: 02
+      day: 13
+      hour: 15
+      minute: 00
+      second: 00
+  ```
+
 ## Feedback
 
 * Ask a question on [Stack Overflow][stack-url].

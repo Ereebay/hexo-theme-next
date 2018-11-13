@@ -91,6 +91,34 @@ $ git pull
 
 我们欢迎你贡献出你的一份力量，你可以随时提交 issue 或 fork 本仓库。静候你的 pull request。
 
+## 我做的修改
+
+在`_config.yml`中
+- 启用公安网备案
+    ```javascript
+    # 公安网备案 for Chinese users. local 意味着 “京” 或者 “赣”   
+    # 例如：赣公网安备36010202000154号
+    gongan:
+        enable: true
+        local: 赣
+        num: 36010202000154
+    ```
+
+- 启用网站运行时间提示
+
+  ```javascript
+  # 格式, 2018-02-13 15:00:00  如果只有一位数，前面需要补零。
+    runtime:
+      enable: true
+      year: 2018
+      mouth: 02
+      day: 13
+      hour: 15
+      minute: 00
+      second: 00
+  ```
+
+
 ## Feedback
 
 * Ask a question on [Stack Overflow][stack-url].
