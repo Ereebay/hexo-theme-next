@@ -66,7 +66,7 @@
 {% if theme.footer.beian.enable %}{#
 #}  {{ next_url('http://www.miitbeian.gov.cn', theme.footer.beian.icp ) }}{{' | '}}
 <span style="padding-left:25px;background:url(https://s1.ax1x.com/2018/09/29/ilmwIH.png) no-repeat left center" rel="nofollow">
-{{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010202000154', theme.footer.beian.gongan ) }}</span>{#
+{{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='+theme.footer.beian.gongan_num, theme.footer.beian.gongan_local+'公网安备'+theme.footer.beian.gongan_num+'号' ) }}</span>{#
 
 <div class="BbeiAn-info">
   {{ __('赣ICP备') }} -
