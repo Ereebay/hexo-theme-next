@@ -156,11 +156,11 @@ exturl: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   中文: cn.html || flag
-  Home: / || home
-  About: /about/ || user
-  Tags: /tags/ || tags
-  Categories: /categories/ || th
-  Archives: /archives/ || archive
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
