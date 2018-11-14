@@ -1,6 +1,7 @@
 <div align="right">Language: :us:
-<a title="Chinese" href="docs/zh-CN/README.md">:cn:</a>
+欢迎直接阅读中文版本 <a title="Chinese" href="docs/zh-CN/README.md">:cn:</a>
 <a title="Russian" href="docs/ru/README.md">:ru:</a></div>
+
 
 # <div align="center"><a title="Go to homepage" href="https://theme-next.org"><img align="center" width="56" height="56" src="https://raw.githubusercontent.com/theme-next/hexo-theme-next/master/source/images/logo.svg?sanitize=true"></a> e x T</div>
 
@@ -93,7 +94,10 @@ Contribution is welcome, feel free to open an issue and fork. Waiting for your p
 
 ## The modification I made
 
+建议直接阅读中文版本的readme
+
 in `_config.yml`
+
 - Enable public security network filing
     ```javascript
     # 公安网备案 for Chinese users. local mean 京 or 赣  
@@ -107,6 +111,7 @@ in `_config.yml`
 - Enable website runtime reminders
 
   ```javascript
+  # The time the site started running. Show how long the site has been running.
   # Format, 2018-02-13 15:00:00. If there is only one digit, use zero to complete.
     runtime:
       enable: true
