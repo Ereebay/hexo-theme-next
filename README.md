@@ -123,6 +123,8 @@ in `_config.yml`
       second: 00
   ```
 
+Go [here](https://en.xian6ge.cn/posts/5b8c41e7/) to read more.
+
 ## Feedback
 
 * Ask a question on [Stack Overflow][stack-url].

@@ -119,6 +119,7 @@ $ git pull
       second: 00
   ```
 
+去[这里](https://xian6ge.cn/posts/5b8c41e7/)阅读更多
 
 ## Feedback
 
