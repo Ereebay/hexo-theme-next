@@ -296,7 +296,13 @@ sidebar:
 # ---------------------------------------------------------------
 # Post Settings
 # ---------------------------------------------------------------
-
+# At the end of the article, show thanks for reading
+end_info:
+  enable: true
+  start_info: -------The end of this article
+  icon: paw
+  end_info: Thank you for your reading-------
+  
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 

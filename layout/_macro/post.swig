@@ -345,6 +345,12 @@
       {% endif  %}
     </div>
 
+    <div>
+      {% if not is_index and theme.end_info.enable %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
+
     {% if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
       {% include 'post-related.swig' with { post: post } %}
     {% endif %}
@@ -352,11 +358,7 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
-    <div>
-      {% if not is_index %}
-        {% include 'passage-end-tag.swig' %}
-      {% endif %}
-    </div>
+
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
