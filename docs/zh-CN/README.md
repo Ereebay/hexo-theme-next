@@ -130,7 +130,7 @@ $ git pull
     language: 英文  # language name
     icon: globe
     info: 英文版本 
-    url: https://xian6ge.cn # Destination URL
+    url: https://en.xian6ge.cn # Destination URL
   ```
 
 去[这里](https://xian6ge.cn/posts/5b8c41e7/)阅读更多
