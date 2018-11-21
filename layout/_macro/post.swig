@@ -273,6 +273,13 @@
       </header>
     {% endif %}
 
+    {% if theme.translation.enable and not is_index %}
+      <div>
+           {% include '../_partials/post-tran.swig' with { post: post } %}
+           <br/>
+      </div>
+    {% endif %}
+
     {#################}
     {### POST BODY ###}
     {#################}

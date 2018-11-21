@@ -123,6 +123,13 @@ creative_commons:
   sidebar: false
   post: true
 
+# Go to another language Page
+translation:
+  enable: false
+  language: 中文  # language name
+  icon: flag
+  info: Chinese Version 
+  url: https://xian6ge.cn # Destination URL
 
 # ---------------------------------------------------------------
 # SEO Settings
