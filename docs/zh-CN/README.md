@@ -109,14 +109,28 @@ $ git pull
   ```javascript
   # 输入网站开始运行的时间。提示网站已经运行了多久。
   # 格式, 2018-02-13 15:00:00  如果只有一位数，前面需要补零。
-    runtime:
-      enable: true
-      year: 2018
-      mouth: 02
-      day: 13
-      hour: 15
-      minute: 00
-      second: 00
+  runtime:
+        enable: true
+        year: 2018
+        mouth: 02
+        day: 13
+        hour: 15
+        minute: 00
+        second: 00
+  ```
+
+- 在文章开头展示链接，连接到对应的双语网页。
+
+  这个功能需要手动设置对应文章的`abbrlink`一致。建议在本地先编译一个语言版本的文件，然后手动修改另一个版本的文章的链接。
+
+  ```javascript
+  # Go to another language Page
+  translation:
+    enable: true
+    language: 英文  # language name
+    icon: globe
+    info: 英文版本 
+    url: https://xian6ge.cn # Destination URL
   ```
 
 去[这里](https://xian6ge.cn/posts/5b8c41e7/)阅读更多

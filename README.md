@@ -113,17 +113,30 @@ in `_config.yml`
   ```javascript
   # The time the site started running. Show how long the site has been running.
   # Format, 2018-02-13 15:00:00. If there is only one digit, use zero to complete.
-    runtime:
-      enable: true
-      year: 2018
-      mouth: 02
-      day: 13
-      hour: 15
-      minute: 00
-      second: 00
+  runtime:
+        enable: true
+        year: 2018
+        mouth: 02
+        day: 13
+        hour: 15
+        minute: 00
+        second: 00
   ```
 
-Go [here](https://en.xian6ge.cn/posts/5b8c41e7/) to read more.
+- Show the link at the beginning of the article and connect to the corresponding bilingual page.
+
+  This feature requires manual setting of the corresponding article 'abbrlink'. It is recommended to compile a language version of the file locally and then manually modify the link to another version of the article.
+
+  ```javascript
+  # Go to another language Page
+  translation:
+    enable: true
+    language: 中文  # language name
+    icon: flag
+    info: Chinese Version 
+    url: https://xian6ge.cn # Destination URL
+  ```
+  Go [here](https://en.xian6ge.cn/posts/5b8c41e7/) to read more.
 
 ## Feedback
 
