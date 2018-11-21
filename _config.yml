@@ -128,7 +128,7 @@ translation:
   enable: false
   language: 中文  # language name
   icon: flag
-  info: Chinese Version 
+  info: Chinese Version # if it's empty, show url
   url: https://xian6ge.cn # Destination URL
 
 # ---------------------------------------------------------------

@@ -129,7 +129,7 @@ $ git pull
     enable: true
     language: 英文  # language name
     icon: globe
-    info: 英文版本 
+    info: 英文版本  # if it's empty, show url
     url: https://en.xian6ge.cn # Destination URL
   ```
 

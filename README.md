@@ -133,7 +133,7 @@ in `_config.yml`
     enable: true
     language: 中文  # language name
     icon: flag
-    info: Chinese Version 
+    info: Chinese Version  # if it's empty, show url
     url: https://xian6ge.cn # Destination URL
   ```
   Go [here](https://en.xian6ge.cn/posts/5b8c41e7/) to read more.
