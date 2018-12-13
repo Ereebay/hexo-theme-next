@@ -116,7 +116,7 @@ in `_config.yml`
   runtime:
         enable: true
         year: 2018
-        mouth: 02
+        month: 02
         day: 13
         hour: 15
         minute: 00
